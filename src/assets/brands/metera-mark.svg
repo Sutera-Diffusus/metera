@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Metera</title>
+  <desc id="desc">A continuous pulse waveform carrying an abstract double-peak M rhythm.</desc>
+  <defs>
+    <linearGradient id="metera-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#151233"/>
+      <stop offset="1" stop-color="#090715"/>
+    </linearGradient>
+    <linearGradient id="metera-pulse" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#b9adff"/>
+      <stop offset="1" stop-color="#7a5af8"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="62" height="62" rx="16" fill="url(#metera-bg)"/>
+  <rect x="1" y="1" width="62" height="62" rx="16" fill="none" stroke="#a99fff" stroke-opacity=".18"/>
+  <path d="M8 38h7c2 0 3-1 3.5-3l3.5-12c.7-2.4 4.3-2.4 5 0l4 14c.6 2.2 3.4 2.2 4 0l4-11c.8-2.3 4.2-2.3 5 0l3 10c.7 2 2 3 4 3h5" fill="none" stroke="url(#metera-pulse)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

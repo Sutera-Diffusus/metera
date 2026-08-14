@@ -1,0 +1,87 @@
+/* ==========================================================================
+   §17 Dashboard Apple 风设计 token —— 色彩/圆角/材质的唯一来源
+   加载顺序必须在 dashboard-v2.css 之后，同名变量以此文件为准。
+   ========================================================================== */
+
+.v2-dashboard-shell {
+  /* 品牌色（§17.2 终稿，全部有实物依据） */
+  --brand-codex: #e8eaf0;
+  --brand-claude: #d97757;
+  --brand-kimi: #7a5af8;
+  --brand-reasonix: #5eead4;
+  --brand-dsh: #4d6bfe;
+  --brand-workbuddy: #32e6b9;
+  --brand-zcode: #3b5bff;
+  --brand-zhipu: #3b5bff;
+  --brand-unknown: #8e94a8;
+
+  /* 单位色（沿用浮窗 §10） */
+  --unit-tokens: #ff453a;
+  --unit-cost: #30d158;
+
+  /* 状态色（仅风险告警） */
+  --ok: #30d158;
+  --warn: #ffd60a;
+  --danger: #ff453a;
+
+  /* UI 唯一强调色：薰衣草紫 */
+  --accent: #8b7cf6;
+  --accent-soft: rgba(139, 124, 246, .18);
+  --accent-line: rgba(139, 124, 246, .45);
+  --accent-text: #a99fff;
+
+  /* Token waffle semantic scale: neutral lavender, independent of provider brands. */
+  --token-input: #b9b1ff;
+  --token-cache: #9b91f0;
+  --token-output: #8176d8;
+  --token-reasoning: #d8d2ff;
+
+  /* Apple 完美圆角刻度（§17.4，废止旧 ≤8px） */
+  --r-hero: 20px;
+  --r-card: 16px;
+  --r-inner: 12px;
+  --r-chip: 8px;
+
+  /* Black Moon 深色：藏青黑 */
+  --v2-bg: #0e1524;
+  --v2-sidebar: #0a111f;
+  --v2-surface: #141c2e;
+  --v2-surface-raised: #1b2742;
+  --v2-line: rgba(151, 168, 205, .13);
+  --v2-line-strong: rgba(151, 168, 205, .22);
+  --v2-text: #f2f5fb;
+  --v2-muted: #9299b4;
+  --v2-soft: #646c88;
+
+  /* 光晕强度（浅色主题减半） */
+  --glow-strength: 1;
+}
+
+.v2-dashboard-shell[data-theme="day"] {
+  --v2-bg: #f3f5fb;
+  --v2-sidebar: #ebedf6;
+  --v2-surface: #ffffff;
+  --v2-surface-raised: #f6f8fd;
+  --v2-line: rgba(23, 32, 58, .1);
+  --v2-line-strong: rgba(23, 32, 58, .18);
+  --v2-text: #17203a;
+  --v2-muted: #5f6b8a;
+  --v2-soft: #98a1bc;
+  /* 浅色主题下银白不可读，Codex 降级为石墨 */
+  --brand-codex: #3a4256;
+  --accent-soft: rgba(139, 124, 246, .14);
+  --token-input: #6158b8;
+  --token-cache: #7167c5;
+  --token-output: #8278d4;
+  --token-reasoning: #51489e;
+  --glow-strength: .5;
+}
+
+/* 数字排版纪律：等宽 + 禁连字（修深度分析页字形粘连） */
+.v2-dashboard-shell .num,
+.v2-metric-band strong,
+.v2-trend-summary strong {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+  font-variant-ligatures: none;
+}

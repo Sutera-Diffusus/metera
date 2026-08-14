@@ -1,0 +1,35 @@
+# Dependencies and generated frontend output
+node_modules/
+dist/
+
+# Rust build output and local toolchains
+target/
+target-v1.0/
+.toolchain/
+artifacts/
+
+# Local development, release, and backup material
+.superpowers/
+releases/
+backup/
+tools/
+tasks/
+docs/handoff/
+docs/superpowers/
+docs/CORRECTION-LOG.md
+docs/dashboard-v2-plan.md
+docs/Metera-Development-Outline.md
+
+# Local data, credentials, logs, and temporary files
+*.log
+*.db
+*.sqlite
+*.sqlite3
+*.corrupt
+*.tmp
+*.tsbuildinfo
+*.exe
+*.msi
+.env
+.env.*
+!.env.example
