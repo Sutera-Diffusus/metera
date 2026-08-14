@@ -1,11 +1,15 @@
 # Metera
 
+[简体中文](README.zh-CN.md) · English
+
 > A local-first Windows desktop usage meter for AI coding tools.
 
 Metera is a Tauri desktop application that brings usage, token, cost, quota,
 and activity information from several AI coding tools into one dashboard. It
 also provides an acrylic floating meter, tray controls, local SQLite storage,
 auditable provider pricing, and optional daily email reports.
+
+![Metera launch banner](docs/assets/metera-launch-banner.png)
 
 The current user-facing release is **1.7.0.1**. The package manifests keep the
 build version at `1.7.0` because Cargo, npm, and Tauri use three-component
@@ -56,8 +60,8 @@ or unsanitized screenshots when reporting a problem.
 
 ## Installation
 
-Download the Windows x64 installer from [GitHub Releases](../../releases) when
-the public release is published. The installer uses a current-user install
+Download the Windows x64 installer from [GitHub Releases](../../releases). The
+installer uses a current-user install
 and may download WebView2 through the Tauri bootstrapper if WebView2 is not
 already installed.
 
